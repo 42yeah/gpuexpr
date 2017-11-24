@@ -1,0 +1,14 @@
+{% extends "index.html" %}
+
+{% block main %}
+<h1>{{ p.title }}</h1>
+<h4 class="text-muted">{{ p.author }}</h4>
+<div class="bs-component" style="margin-bottom:10px">
+    {% for badge in badges %}
+    <span class="badge badge-success">{{ badge }}</span>
+    {% endfor %}
+</div>
+<p>
+    {{ p.body|safe }}
+</p>
+{% endblock %}

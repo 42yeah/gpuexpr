@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>
+            人工智能课题实验组
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% load staticfiles %}
+        <link rel="stylesheet" href="{% static 'css/bootstrap-cerulean.css' %}" type="text/css"/>
+        <link rel="stylesheet" href="{% static 'css/pad.css' %}" type="text/css"/>
+    </head>
+
+    <body>
+        <div class="bs-component">
+            <nav class="navbar navbar-dark bg-primary fixed-top navbar-expand-lg">
+                <a href="/" class="navbar-brand">人工智能课题实验组</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".nb" aria-controls="nb" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="nb">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"><a href="/category/opencv" class="nav-link">OpenCV</a></li>
+                        <li class="nav-item"><a href="/category/labview" class="nav-link">LabVIEW</a></li>
+                        <li class="nav-item"><a href="/category/tensorflow" class="nav-link">Tensorflow</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <main class="container">
+            <div class="pad">
+                <div class="row">
+                    <div class="col-lg-8">
+                        {% block main %}
+                            
+                        {% endblock %}
+                    </div>
+
+                    <div class="col-lg-4">
+                        <form method="POST" action="/search/" style="margin-bottom: 15px;">
+                            <fieldset>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            搜索
+                                        </div>
+                                        <input type="text" class="form-control" name="q">
+                                    </div>
+                                </div>
+                                <button type="submit" class="sr-only">搜索</button>
+                            </fieldset>
+                        </form>
+                        <h3>更多新闻</h3>
+                        <ul class="list-group" style="margin-top: 5px;">
+                            {% ifequal elen 0 %}
+                            <li class="list-group-item text-muted">近期没有工作</li>
+                            {% endifequal %}
+                            {% for e in entries %}
+                            <a href="/entry/{{ e.title }}" class="list-group-item list-group-item-action">
+                                {{ e.title }}
+                            </a>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </main>
+
+        <footer class="container">
+            <br /><br /><hr />
+            <p>
+                你到底部啦。
+            </p>
+        </footer>
+    </body>
+</html>

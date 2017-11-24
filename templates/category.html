@@ -1,0 +1,32 @@
+{% extends "index.html" %}
+
+{% block main %}
+<h1 style="margin-bottom: 15px">
+    {{ category }}
+</h1>
+<div class="bs-component">
+    <div class="list-group">
+        {% ifequal l 0 %}
+        <div class="list-group-item">
+            没有关于 {{ category }} 的文章。
+        </div>
+        {% endifequal %}
+        {% for p in grp %}
+        <a href="/entry/{{ p.title }}" class="list-group-item list-group-item-action">
+            <div>
+                <h3 class="list-group-item-heading">
+                    {{ p.title }}
+                </h3>
+                <h5 class="list-group-item-heading">
+                    {{ p.author }}
+                </h5>
+                <p class="list-group-item-text">
+                    {{ p.brief }}
+                </p>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}
