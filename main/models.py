@@ -1,13 +1,10 @@
 from django.db import models
-from tinymce.models import HTMLField
-from ckeditor.fields import RichTextField
-from ckeditor_uploader.fields import RichTextUploadingField
 
 # Create your models here.
 class Passage(models.Model):
     title = models.CharField(max_length=1024)
     author = models.CharField(max_length=1024)
-    body = RichTextUploadingField()
+    body = models.TextField()
     tags = models.CharField(max_length=1024)
 
     def __str__(self):

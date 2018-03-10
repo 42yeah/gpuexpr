@@ -16,7 +16,7 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from django.conf.urls.static import static
-from main.views import index, entry, category
+from main.views import index, entry, category, upload
 from gpuexpr.settings import MEDIA_ROOT, MEDIA_URL
 from django.conf.urls import include
 
@@ -25,6 +25,6 @@ urlpatterns = [
     url(r'^$', index),
     url(r'^entry/(.+)', entry),
     url(r'^category/(.+)', category),
-    url(r'^ckeditor/', include('ckeditor_uploader.urls')),
+    url(r'^upload/$', upload)
 ] + static(MEDIA_URL, document_root=MEDIA_ROOT)
 

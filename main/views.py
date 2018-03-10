@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from main.models import Passage, Pic
+import traceback
+import os
 import random
 
 # Create your views here.
@@ -33,7 +35,16 @@ def entry(request, e):
     if (ent.__len__() <= 0):
         pass # no such entry 
     badges = ent[0].tags.split(' ')
-    
+    if (ent[0].body[:4] == 'PATH'):
+        file = open(ent[0].body[4:], 'rb')
+        try:
+            ent[0].body = file.read().decode("gbk")
+        except Exception as e:
+            try:
+                ent[0].body = file.read().decode("utf-8")
+            except Exception as e:
+                print('Cant decode')
+                
     con = {
         'badges': badges,
         'p': ent[0],
@@ -50,8 +61,8 @@ def category(request, tag):
             if (et == tag):
                 l += 1
                 d = {}
-                d['title'] = p.title;
-                d['author'] = p.author;
+                d['title'] = p.title
+                d['author'] = p.author
                 if (p.body.__len__() > 100):
                     d['brief'] = p.body[:100] + '...'
                 else:
@@ -64,3 +75,36 @@ def category(request, tag):
         'l': l,
     }
     return render(request, 'category.html', gen(con))
+
+def upload(request):
+    try:
+        f = request.FILES['f']
+        file = open('media/' + f.name, 'wb')
+        for chunk in f.chunks():
+            file.write(chunk)
+        file.close()
+        file = open('media/' + f.name, 'r')
+        os.system('soffice --headless --convert-to html --outdir "C:\\Users\\potio\\Documents\\gpuexpr\\media" "C:\\Users\\potio\\Documents\\gpuexpr\\media\\' + f.name + '"')
+        spt = file.name.split('.')
+        spt[len(spt) - 1] = 'html'
+        fname = ''
+        for s in spt:
+            fname += s + '.'
+        fname[len(fname) - 1] = ''
+        print(fname)
+        Passage.objects.create(
+            title = request.POST['title'],
+            author = request.POST['author'],
+            body = 'PATH' + fname,
+            tags = request.POST['tags']
+        )
+        con = {
+            'succ': True
+        }
+
+    except Exception as e:
+        print(e)
+        con = {
+            'succ': False
+        }
+    return render(request, 'upload.html', gen(con))

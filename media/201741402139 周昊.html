@@ -1,0 +1,658 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=gb2312"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 5.3.4.2 (Windows)"/>
+	<meta name="created" content="2018-03-06T20:14:07.782000000"/>
+	<meta name="changed" content="2018-03-06T20:25:34.334000000"/>
+	<style type="text/css">
+		@page { margin: 0.79in }
+		p { margin-bottom: 0.1in; direction: ltr; color: #000000; line-height: 120%; orphans: 2; widows: 2 }
+		p.western { font-family: "Liberation Serif", "Times New Roman", serif; font-size: 12pt; so-language: en-US }
+		p.cjk { font-family: "宋体"; font-size: 12pt; so-language: zh-CN }
+		p.ctl { font-family: "Arial", sans-serif; font-size: 12pt; so-language: hi-IN }
+		td p { margin-bottom: 0in; direction: ltr; color: #000000; orphans: 2; widows: 2 }
+		td p.western { font-family: "Liberation Serif", "Times New Roman", serif; font-size: 12pt; so-language: en-US }
+		td p.cjk { font-family: "宋体"; font-size: 12pt; so-language: zh-CN }
+		td p.ctl { font-family: "Arial", sans-serif; font-size: 12pt; so-language: hi-IN }
+		a:link { so-language: zxx }
+	</style>
+</head>
+<body lang="zh-CN" text="#000000" dir="ltr">
+<p class="cjk" style="margin-bottom: 0in; line-height: 100%"><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US">	</span></font>我一直都感兴趣的是虚拟现实：</p>
+<p class="cjk" style="margin-bottom: 0in; line-height: 100%"><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US">	</span></font>以下是虚拟现实的原理介绍（来自知乎专栏）：</p>
+<p class="cjk" style="margin-bottom: 0.14in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+<font color="#333333"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt">我们可以用一个小实验来感受一下人眼的功能：</font></font></font></p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><span style="font-variant: normal"><font color="#333333"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">1.</span></span></span></font></font></font></span></span></font><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt"><span style="font-style: normal"><span style="font-weight: normal">当你分别遮住一只眼睛，用另一只眼睛看你的左手时，你的两只眼睛各自看到的图像，会有一些微小的差别。这个就叫做</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt"><span style="font-style: normal"><b>人眼的双目视差</b></span></font></font></span></font></span><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt"><span style="font-style: normal"><span style="font-weight: normal">。</span></span></font></font></span></font></span></p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk"><img src="201741402139%20%E5%91%A8%E6%98%8A_html_c8a807c327bbfef2.jpg" name="鍥惧儚1" align="bottom" width="1280" height="381" border="0"/>
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><span style="font-variant: normal"><font color="#333333"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">2.</span></span></span></font></font></font></span></span></font><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt"><span style="font-style: normal"><span style="font-weight: normal">当你把手机放在面前，先把头歪到左边，再把头歪到右边时，你的眼睛看到的就分别是手机的左边框和右边框。这个叫做</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt"><span style="font-style: normal"><b>人眼的移动视差</b></span></font></font></span></font></span><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt"><span style="font-style: normal"><span style="font-weight: normal">。</span></span></font></font></span></font></span></p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk"><img src="201741402139%20%E5%91%A8%E6%98%8A_html_da3e35771d66992e.jpg" name="鍥惧儚2" align="bottom" width="1280" height="385" border="0"/>
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk"><img src="201741402139%20%E5%91%A8%E6%98%8A_html_c177b233b4736ca4.jpg" name="鍥惧儚3" align="bottom" width="1280" height="405" border="0"/>
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><span style="font-variant: normal"><font color="#333333"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">3.</span></span></span></font></font></font></span></span></font><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt"><span style="font-style: normal"><span style="font-weight: normal">而当你摊开两只手，先盯着左手看，再盯着右手看，也就是眼睛聚焦到不同的手上时，会依次看到左手清晰右手模糊，以及左手模糊右手清晰的图像。这是</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt"><span style="font-style: normal"><b>人眼的变焦功能</b></span></font></font></span></font></span><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt"><span style="font-style: normal"><span style="font-weight: normal">。</span></span></font></font></span></font></span></p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk"><img src="201741402139%20%E5%91%A8%E6%98%8A_html_99addf320821ae07.jpg" name="鍥惧儚4" align="bottom" width="1280" height="345" border="0"/>
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk"><img src="201741402139%20%E5%91%A8%E6%98%8A_html_56262f9c9547eaab.jpg" name="鍥惧儚5" align="bottom" width="1280" height="354" border="0"/>
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt"><span style="font-style: normal"><b>正是因为人眼天然拥有以上这些视觉差异和变焦功能，你眼前的这个场景，才能在大脑的加工后变得立体和纵深</b></span></font></font></span></font></span><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt"><span style="font-style: normal"><span style="font-weight: normal">；</span></span></font></font></span></font></span></p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+<font color="#333333"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt">而传统相机的二维成像技术，和人眼这些复杂功能比起来，简直被甩开了好几条街。</font></font></font></p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; font-variant: normal; letter-spacing: normal; font-style: normal; orphans: 2; widows: 2">
+<font color="#333333"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt"><b>那么，人眼这么复杂的视觉体验，虚拟现实又是怎么模仿出来的呢？</b></font></font></font></p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+<font color="#333333"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt">我们再来做一个实验：</font></font></font></p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt"><span style="font-style: normal"><span style="font-weight: normal">首先，如果把相机放在一个点上，拍摄广场上一远一近的两个人。那么当镜头对焦在不同的人身上时，就能拍到</span></span></font></font></span></font></span><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><span style="font-variant: normal"><font color="#333333"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">2</span></span></span></font></font></font></span></span></font><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt"><span style="font-style: normal"><span style="font-weight: normal">张只有一个人清晰，而其他部分虚化的照片。</span></span></font></font></span></font></span></p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk"><img src="201741402139%20%E5%91%A8%E6%98%8A_html_4e4313fb23023d2f.jpg" name="鍥惧儚6" align="bottom" width="1280" height="439" border="0"/>
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk"><img src="201741402139%20%E5%91%A8%E6%98%8A_html_74c1ec55a68167c2.jpg" name="鍥惧儚7" align="bottom" width="1280" height="414" border="0"/>
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt"><span style="font-style: normal"><span style="font-weight: normal">接着，如果在这两个人的斜后方再加一个人，整个场景里就出现了</span></span></font></font></span></font></span><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><span style="font-variant: normal"><font color="#333333"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">3</span></span></span></font></font></font></span></span></font><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt"><span style="font-style: normal"><span style="font-weight: normal">个远近不同的人。那么镜头对焦在不同的人身上时，我们就能拍到</span></span></font></font></span></font></span><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><span style="font-variant: normal"><font color="#333333"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">3</span></span></span></font></font></font></span></span></font><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt"><span style="font-style: normal"><span style="font-weight: normal">张只有一个人清晰，而其他部分虚化的照片。</span></span></font></font></span></font></span></p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk"><img src="201741402139%20%E5%91%A8%E6%98%8A_html_54a005b058e266e.jpg" name="鍥惧儚8" align="bottom" width="1280" height="491" border="0"/>
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk"><img src="201741402139%20%E5%91%A8%E6%98%8A_html_5bfbdea55e144ccd.jpg" name="鍥惧儚9" align="bottom" width="1280" height="501" border="0"/>
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk"><img src="201741402139%20%E5%91%A8%E6%98%8A_html_2f4fff1257bec431.jpg" name="鍥惧儚10" align="bottom" width="1280" height="528" border="0"/>
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+<font color="#333333"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt">而如果再不断地向斜后方增加人数，那么这个相机就能拍摄出无数张只有一个人清晰，而其他部分虚化的照片。</font></font></font></p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk"><img src="201741402139%20%E5%91%A8%E6%98%8A_html_9cb2d916eeee338a.jpg" name="鍥惧儚11" align="bottom" width="1280" height="506" border="0"/>
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+<font color="#333333"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt">现在，见证奇迹的时刻来了。</font></font></font></p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; font-variant: normal; letter-spacing: normal; font-style: normal; orphans: 2; widows: 2">
+<font color="#333333"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt"><b>如果把这些照片叠在一起，它们实际上就粗略地组成了在这个角度上，&ldquo;很多人站在广场上&rdquo;，这样的一个立体场景；</b></font></font></font></p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; font-variant: normal; letter-spacing: normal; font-style: normal; orphans: 2; widows: 2">
+<font color="#333333"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt"><b>换句话说，相机在这个点上能够&ldquo;看&rdquo;到的整个立体的场景，可以被竖着切成无数张切片，也就是这无数张照片。</b></font></font></font></p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk"><img src="201741402139%20%E5%91%A8%E6%98%8A_html_9911b46374380ac0.jpg" name="鍥惧儚12" align="bottom" width="1280" height="378" border="0"/>
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+<font color="#333333"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt">而如果我们再模仿人的双眼，以及在不同位置上的视角，再把眼前的场景从各个角度都切片，那么整个场景里所有角度的切片叠加在一起，就最终组成了一个完整的立体场景。</font></font></font></p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk"><img src="201741402139%20%E5%91%A8%E6%98%8A_html_7c3c143eb1301b32.jpg" name="鍥惧儚13" align="bottom" width="1280" height="379" border="0"/>
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk"><img src="201741402139%20%E5%91%A8%E6%98%8A_html_f5581182cab2b148.jpg" name="鍥惧儚14" align="bottom" width="1280" height="451" border="0"/>
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt"><span style="font-style: normal"><span style="font-weight: normal">而就像我们刚才说的，</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt"><span style="font-style: normal"><b>传统相机不管怎么变焦，都只能采集整个立体场景中的这一片切片，或那一片切片</b></span></font></font></span></font></span><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt"><span style="font-style: normal"><span style="font-weight: normal">；</span></span></font></font></span></font></span></p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt"><span style="font-style: normal"><span style="font-weight: normal">但现在的</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt"><span style="font-style: normal"><b>虚拟现实，却可以通过采集整个场景中的很多切片，甚至是所有切片，来生成一个模拟人眼视觉的切片数据库</b></span></font></font></span></font></span><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt"><span style="font-style: normal"><span style="font-weight: normal">；</span></span></font></font></span></font></span></p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+<font color="#333333"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt">这个数据库中的图像经过处理，就能在显示屏上再复现出立体的场景了。</font></font></font></p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk"><img src="201741402139%20%E5%91%A8%E6%98%8A_html_eb37450685b153ae.jpg" name="鍥惧儚15" align="bottom" width="1280" height="389" border="0"/>
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+<font color="#333333"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt">另外，现在最先进的显示技术，甚至已经可以根据你眼睛和身体的动作，实时切换数据库中的切片&mdash;&mdash;</font></font></font></p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+<font color="#333333"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt">不管你在某个瞬间是移动了位置，还是眼睛切换了焦点，计算机都可以通过算法，筛选出你做出这个动作的瞬间应该看到的那一个切片，并且经过快速加工，把那个切片呈现在你眼前的显示屏上。</font></font></font></p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk"><img src="201741402139%20%E5%91%A8%E6%98%8A_html_702e81be9d51126f.jpg" name="鍥惧儚16" align="bottom" width="1280" height="406" border="0"/>
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+<font color="#333333"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt">也就是说，随着你的动作变化，你的眼睛在这一瞬间该看到哪张切片，虚拟现实就给你看哪张切片。</font></font></font></p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+<font color="#333333"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt">这样，你看着眼前这些人工加工的图像，就会感觉像在现实世界中一样了。</font></font></font></p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk"><img src="201741402139%20%E5%91%A8%E6%98%8A_html_abf4220f335d82c1.jpg" name="鍥惧儚17" align="bottom" width="1280" height="371" border="0"/>
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt"><span style="font-style: normal"><span style="font-weight: normal">除了虚拟现实以外，你应该还经常听到一个词，叫</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt"><span style="font-style: normal"><b>增强现实</b></span></font></font></span></font></span><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt"><span style="font-style: normal"><span style="font-weight: normal">。</span></span></font></font></span></font></span></p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt"><span style="font-style: normal"><b>所谓增强现实（</b></span></font></font></span></font></span><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><span style="font-variant: normal"><font color="#333333"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>AR</b></span></span></font></font></font></span></span></font><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt"><span style="font-style: normal"><b>），就是你看得到眼前的现实世界，但这个现实世界活生生被叠加上了虚拟的元素。</b></span></font></font></span></font></span></p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt"><span style="font-style: normal"><span style="font-weight: normal">没错，今年过年支付宝推出的</span></span></font></font></span></font></span><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><span style="font-variant: normal"><font color="#333333"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">AR</span></span></span></font></font></font></span></span></font><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt"><span style="font-style: normal"><span style="font-weight: normal">实景红包，就是基于（简易版的）增强现实技术。</span></span></font></font></span></font></span></p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk"><img src="201741402139%20%E5%91%A8%E6%98%8A_html_b2d3af0b162281f8.jpg" name="鍥惧儚18" align="bottom" width="778" height="1185" border="0"/>
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><br/>
+<br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0.14in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt"><span style="font-style: normal"><span style="font-weight: normal">所以，</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt"><span style="font-style: normal"><b>虚拟现实和增强现实就像它们的名字一样，一个是完全脱离了现实的虚拟世界，一个是现实世界的加强版</b></span></font></font></span></font></span><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="apple-system, BlinkMacSystemFont"><font size="4" style="font-size: 14pt"><span style="font-style: normal"><span style="font-weight: normal">。</span></span></font></font></span></font></span></p>
+<p class="cjk" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0in; line-height: 100%"><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US">2016</span></font>年诺奖：</p>
+<p class="cjk" style="text-indent: 0.19in; margin-bottom: 0.1in; line-height: 0.17in; orphans: 2; widows: 2">
+<font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><span style="font-variant: normal"><font color="#333333"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">2016</span></span></span></font></font></font></span></span></font><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">年</span></span></font></font></span></font></span><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><span style="font-variant: normal"><font color="#333333"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">10</span></span></span></font></font></font></span></span></font><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">月</span></span></font></font></span></font></span><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><span style="font-variant: normal"><font color="#333333"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">3</span></span></span></font></font></font></span></span></font><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">日，日本科学家</span></span></font></font></span></font></span><font color="#000080"><span lang="zxx"><a href="https://baike.baidu.com/item/%E5%A4%A7%E9%9A%85%E8%89%AF%E5%85%B8" target="_blank"><span style="font-variant: normal"><font color="#136ec2"><span style="text-decoration: none"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">大隅良典</span></span></font></font></span></span></font></span></a></span></font><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">获得诺贝尔生理学或医学奖。</span></span></font></font></span></font></span></p>
+<p class="cjk" style="text-indent: 0.19in; margin-bottom: 0.1in; line-height: 0.17in; orphans: 2; widows: 2">
+<font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><span style="font-variant: normal"><font color="#333333"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">2016</span></span></span></font></font></font></span></span></font><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">年</span></span></font></font></span></font></span><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><span style="font-variant: normal"><font color="#333333"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">10</span></span></span></font></font></font></span></span></font><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">月</span></span></font></font></span></font></span><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><span style="font-variant: normal"><font color="#333333"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">4</span></span></span></font></font></font></span></span></font><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">日，三位美国科学家：</span></span></font></font></span></font></span><a href="https://baike.baidu.com/item/%E6%88%B4%E7%BB%B4%C2%B7%E7%B4%A2%E5%88%A9%E6%96%AF" target="_blank"><font color="#000080"><span lang="zxx"><span style="font-variant: normal"><font color="#136ec2"><span style="text-decoration: none"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">戴维</span></span></font></font></span></span></font></span></span></font><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><font color="#000080"><span lang="zxx"><span style="font-variant: normal"><font color="#136ec2"><span style="text-decoration: none"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&middot;</span></span></span></font></font></span></font></span></span></font></span></font><font color="#000080"><span lang="zxx"><span style="font-variant: normal"><font color="#136ec2"><span style="text-decoration: none"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">索利斯</span></span></font></font></span></span></font></span></span></font></a><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">、</span></span></font></font></span></font></span><a href="https://baike.baidu.com/item/%E9%82%93%E8%82%AF%C2%B7%E9%9C%8D%E5%B0%94%E4%B8%B9" target="_blank"><font color="#000080"><span lang="zxx"><span style="font-variant: normal"><font color="#136ec2"><span style="text-decoration: none"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">邓肯</span></span></font></font></span></span></font></span></span></font><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><font color="#000080"><span lang="zxx"><span style="font-variant: normal"><font color="#136ec2"><span style="text-decoration: none"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&middot;</span></span></span></font></font></span></font></span></span></font></span></font><font color="#000080"><span lang="zxx"><span style="font-variant: normal"><font color="#136ec2"><span style="text-decoration: none"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">霍尔丹</span></span></font></font></span></span></font></span></span></font></a><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">和</span></span></font></font></span></font></span><a href="https://baike.baidu.com/item/%E8%BF%88%E5%85%8B%E5%B0%94%C2%B7%E7%A7%91%E6%96%AF%E7%89%B9%E5%88%A9%E8%8C%A8" target="_blank"><font color="#000080"><span lang="zxx"><span style="font-variant: normal"><font color="#136ec2"><span style="text-decoration: none"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">迈克尔</span></span></font></font></span></span></font></span></span></font><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><font color="#000080"><span lang="zxx"><span style="font-variant: normal"><font color="#136ec2"><span style="text-decoration: none"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&middot;</span></span></span></font></font></span></font></span></span></font></span></font><font color="#000080"><span lang="zxx"><span style="font-variant: normal"><font color="#136ec2"><span style="text-decoration: none"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">科斯特利茨</span></span></font></font></span></span></font></span></span></font></a><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">，获得诺贝尔物理学奖。</span></span></font></font></span></font></span></p>
+<p class="cjk" style="text-indent: 0.19in; margin-bottom: 0.1in; line-height: 0.17in; orphans: 2; widows: 2">
+<font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><span style="font-variant: normal"><font color="#333333"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">2016</span></span></span></font></font></font></span></span></font><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">年</span></span></font></font></span></font></span><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><span style="font-variant: normal"><font color="#333333"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">10</span></span></span></font></font></font></span></span></font><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">月</span></span></font></font></span></font></span><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><span style="font-variant: normal"><font color="#333333"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">5</span></span></span></font></font></font></span></span></font><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">日，</span></span></font></font></span></font></span><a href="https://baike.baidu.com/item/%E8%AE%A9-%E7%9A%AE%E5%9F%83%E5%B0%94%C2%B7%E7%B4%A2%E7%BB%B4%E5%A5%87" target="_blank"><font color="#000080"><span lang="zxx"><span style="font-variant: normal"><font color="#136ec2"><span style="text-decoration: none"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">让</span></span></font></font></span></span></font></span></span></font><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><font color="#000080"><span lang="zxx"><span style="font-variant: normal"><font color="#136ec2"><span style="text-decoration: none"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">-</span></span></span></font></font></span></font></span></span></font></span></font><font color="#000080"><span lang="zxx"><span style="font-variant: normal"><font color="#136ec2"><span style="text-decoration: none"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">皮埃尔</span></span></font></font></span></span></font></span></span></font><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><font color="#000080"><span lang="zxx"><span style="font-variant: normal"><font color="#136ec2"><span style="text-decoration: none"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&middot;</span></span></span></font></font></span></font></span></span></font></span></font><font color="#000080"><span lang="zxx"><span style="font-variant: normal"><font color="#136ec2"><span style="text-decoration: none"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">索维奇</span></span></font></font></span></span></font></span></span></font></a><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">、</span></span></font></font></span></font></span><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><a href="https://baike.baidu.com/item/J.%E5%BC%97%E9%9B%B7%E6%B3%BD%C2%B7%E6%96%AF%E6%89%98%E8%BE%BE%E7%89%B9" target="_blank"><font color="#000080"><span lang="zxx"><span style="font-variant: normal"><font color="#136ec2"><span style="text-decoration: none"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">J.</span></span></span></font></font></span></font></span></span></font></span></font><font color="#000080"><span lang="zxx"><span style="font-variant: normal"><font color="#136ec2"><span style="text-decoration: none"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">弗雷泽</span></span></font></font></span></span></font></span></span></font><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><font color="#000080"><span lang="zxx"><span style="font-variant: normal"><font color="#136ec2"><span style="text-decoration: none"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&middot;</span></span></span></font></font></span></font></span></span></font></span></font><font color="#000080"><span lang="zxx"><span style="font-variant: normal"><font color="#136ec2"><span style="text-decoration: none"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">斯托达特</span></span></font></font></span></span></font></span></span></font></a><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">、</span></span></font></font></span></font></span><a href="https://baike.baidu.com/item/%E4%BC%AF%E7%BA%B3%E5%BE%B7%C2%B7L%C2%B7%E8%B4%B9%E6%9E%97%E5%8A%A0" target="_blank"><font color="#000080"><span lang="zxx"><span style="font-variant: normal"><font color="#136ec2"><span style="text-decoration: none"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">伯纳德</span></span></font></font></span></span></font></span></span></font><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><font color="#000080"><span lang="zxx"><span style="font-variant: normal"><font color="#136ec2"><span style="text-decoration: none"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&middot;L&middot;</span></span></span></font></font></span></font></span></span></font></span></font><font color="#000080"><span lang="zxx"><span style="font-variant: normal"><font color="#136ec2"><span style="text-decoration: none"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">费林加</span></span></font></font></span></span></font></span></span></font></a><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">，三位科学家获得诺贝尔化学奖。</span></span></font></font></span></font></span></p>
+<p class="cjk" style="margin-left: 0.01in; text-indent: 0.19in; margin-bottom: 0.1in; line-height: 0.17in; orphans: 2; widows: 2">
+<font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><span style="font-variant: normal"><font color="#333333"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">2016</span></span></span></font></font></font></span></span></font><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">年</span></span></font></font></span></font></span><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><span style="font-variant: normal"><font color="#333333"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">10</span></span></span></font></font></font></span></span></font><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">月</span></span></font></font></span></font></span><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><span style="font-variant: normal"><font color="#333333"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">7</span></span></span></font></font></font></span></span></font><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">日，哥伦比亚总统</span></span></font></font></span></font></span><font color="#000080"><span lang="zxx"><a href="https://baike.baidu.com/item/%E6%A1%91%E6%89%98%E6%96%AF/4647911" target="_blank"><span style="font-variant: normal"><font color="#136ec2"><span style="text-decoration: none"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">桑托斯</span></span></font></font></span></span></font></span></a></span></font><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">获得</span></span></font></font></span></font></span><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><span style="font-variant: normal"><font color="#333333"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">2016</span></span></span></font></font></font></span></span></font><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">年诺贝尔和平奖。</span></span></font></font></span></font></span></p>
+<p class="cjk" style="text-indent: 0.19in; margin-bottom: 0.1in; line-height: 0.17in; orphans: 2; widows: 2">
+<font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><span style="font-variant: normal"><font color="#333333"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">2016</span></span></span></font></font></font></span></span></font><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">年</span></span></font></font></span></font></span><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><span style="font-variant: normal"><font color="#333333"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">10</span></span></span></font></font></font></span></span></font><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">月</span></span></font></font></span></font></span><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><span style="font-variant: normal"><font color="#333333"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">10</span></span></span></font></font></font></span></span></font><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">日，</span></span></font></font></span></font></span><a href="https://baike.baidu.com/item/%E5%A5%A5%E5%88%A9%E5%BC%97%C2%B7%E5%93%88%E7%89%B9" target="_blank"><font color="#000080"><span lang="zxx"><span style="font-variant: normal"><font color="#136ec2"><span style="text-decoration: none"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">奥利弗</span></span></font></font></span></span></font></span></span></font><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><font color="#000080"><span lang="zxx"><span style="font-variant: normal"><font color="#136ec2"><span style="text-decoration: none"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&middot;</span></span></span></font></font></span></font></span></span></font></span></font><font color="#000080"><span lang="zxx"><span style="font-variant: normal"><font color="#136ec2"><span style="text-decoration: none"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">哈特</span></span></font></font></span></span></font></span></span></font></a><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">、</span></span></font></font></span></font></span><a href="https://baike.baidu.com/item/%E6%9C%AC%E7%89%B9%C2%B7%E9%9C%8D%E5%A7%86%E6%96%AF%E7%89%B9%E7%BD%97%E5%A7%86" target="_blank"><font color="#000080"><span lang="zxx"><span style="font-variant: normal"><font color="#136ec2"><span style="text-decoration: none"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">本特</span></span></font></font></span></span></font></span></span></font><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><font color="#000080"><span lang="zxx"><span style="font-variant: normal"><font color="#136ec2"><span style="text-decoration: none"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&middot;</span></span></span></font></font></span></font></span></span></font></span></font><font color="#000080"><span lang="zxx"><span style="font-variant: normal"><font color="#136ec2"><span style="text-decoration: none"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">霍姆斯特罗姆</span></span></font></font></span></span></font></span></span></font></a><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">获得诺贝尔经济学奖。</span></span></font></font></span></font></span></p>
+<p class="cjk" style="margin-left: 0.01in; text-indent: 0.19in; margin-bottom: 0.1in; line-height: 0.17in; orphans: 2; widows: 2">
+<font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><span style="font-variant: normal"><font color="#333333"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">2016</span></span></span></font></font></font></span></span></font><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">年</span></span></font></font></span></font></span><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><span style="font-variant: normal"><font color="#333333"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">10</span></span></span></font></font></font></span></span></font><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">月</span></span></font></font></span></font></span><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><span style="font-variant: normal"><font color="#333333"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">13</span></span></span></font></font></font></span></span></font><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">日，美国民谣艺术家</span></span></font></font></span></font></span><a href="https://baike.baidu.com/item/%E9%B2%8D%E5%8B%83%C2%B7%E8%BF%AA%E4%BC%A6" target="_blank"><font color="#000080"><span lang="zxx"><span style="font-variant: normal"><font color="#136ec2"><span style="text-decoration: none"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">鲍勃</span></span></font></font></span></span></font></span></span></font><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><font color="#000080"><span lang="zxx"><span style="font-variant: normal"><font color="#136ec2"><span style="text-decoration: none"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&middot;</span></span></span></font></font></span></font></span></span></font></span></font><font color="#000080"><span lang="zxx"><span style="font-variant: normal"><font color="#136ec2"><span style="text-decoration: none"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">迪伦</span></span></font></font></span></span></font></span></span></font></a><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-style: normal"><span style="font-weight: normal">获得诺贝尔文学奖</span></span></font></font></span></font></span></p>
+<p class="cjk" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0in; line-height: 100%"><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><font size="2" style="font-size: 10pt">2017</font></span></font><font size="2" style="font-size: 10pt">年诺奖：</font></p>
+<p class="cjk" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<table width="694" cellpadding="3" cellspacing="0">
+	<col width="124">
+	<col width="122">
+	<col width="116">
+	<col width="307">
+	<tr>
+		<td rowspan="3" width="124" style="border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6; border-left: 1px solid #e6e6e6; border-right: none; padding-top: 0.02in; padding-bottom: 0.02in; padding-left: 0.07in; padding-right: 0in">
+			<p class="cjk" align="center"><font color="#000080"><span lang="zxx"><a href="https://baike.baidu.com/item/%E8%AF%BA%E8%B4%9D%E5%B0%94%E7%94%9F%E7%90%86%E5%AD%A6%E6%88%96%E5%8C%BB%E5%AD%A6%E5%A5%96" target="_blank"><font color="#136ec2"><span style="text-decoration: none"><font size="2" style="font-size: 10pt">诺贝尔生理学或医学奖</font></span></font></a></span></font></p>
+		</td>
+		<td width="122" style="border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6; border-left: 1px solid #e6e6e6; border-right: none; padding-top: 0.02in; padding-bottom: 0.02in; padding-left: 0.07in; padding-right: 0in">
+			<p class="cjk" align="center"><font color="#000080"><span lang="zxx"><a href="https://baike.baidu.com/item/%E6%9D%B0%E5%BC%97%E7%90%86%C2%B7%E9%9C%8D%E5%B0%94" target="_blank"><font color="#136ec2"><span style="text-decoration: none"><font size="2" style="font-size: 10pt">杰弗理</font></span><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><span lang="zxx"><font size="2" style="font-size: 10pt">&middot;</font></span></span></font><span lang="zxx"><font size="2" style="font-size: 10pt">霍尔</font></span></font></a></span></font></p>
+		</td>
+		<td width="116" style="border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6; border-left: 1px solid #e6e6e6; border-right: none; padding-top: 0.02in; padding-bottom: 0.02in; padding-left: 0.07in; padding-right: 0in">
+			<p class="cjk" align="center"><font size="2" style="font-size: 10pt">美国</font></p>
+		</td>
+		<td rowspan="3" width="307" style="border: 1px solid #e6e6e6; padding: 0.02in 0.07in">
+			<p class="cjk" align="center"><font size="2" style="font-size: 10pt">发现了控制昼夜节律分子机制</font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="122" style="border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6; border-left: 1px solid #e6e6e6; border-right: none; padding-top: 0.02in; padding-bottom: 0.02in; padding-left: 0.07in; padding-right: 0in">
+			<p class="cjk" align="center"><font color="#000080"><span lang="zxx"><a href="https://baike.baidu.com/item/%E8%BF%88%E5%85%8B%E5%B0%94%C2%B7%E7%BD%97%E6%96%AF%E5%B7%B4%E6%AE%8A" target="_blank"><font color="#136ec2"><span style="text-decoration: none"><font size="2" style="font-size: 10pt">迈克尔</font></span><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><span lang="zxx"><font size="2" style="font-size: 10pt">&middot;</font></span></span></font><span lang="zxx"><font size="2" style="font-size: 10pt">罗斯巴殊</font></span></font></a></span></font></p>
+		</td>
+		<td width="116" style="border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6; border-left: 1px solid #e6e6e6; border-right: none; padding-top: 0.02in; padding-bottom: 0.02in; padding-left: 0.07in; padding-right: 0in">
+			<p class="cjk" align="center"><font size="2" style="font-size: 10pt">美国</font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="122" style="border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6; border-left: 1px solid #e6e6e6; border-right: none; padding-top: 0.02in; padding-bottom: 0.02in; padding-left: 0.07in; padding-right: 0in">
+			<p class="cjk" align="center"><font color="#000080"><span lang="zxx"><a href="https://baike.baidu.com/item/%E8%BF%88%E5%85%8B%E5%B0%94%C2%B7%E6%9D%A8/22150285" target="_blank"><font color="#136ec2"><span style="text-decoration: none"><font size="2" style="font-size: 10pt">迈克尔</font></span><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><span lang="zxx"><font size="2" style="font-size: 10pt">&middot;</font></span></span></font><span lang="zxx"><font size="2" style="font-size: 10pt">杨</font></span></font></a></span></font></p>
+		</td>
+		<td width="116" style="border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6; border-left: 1px solid #e6e6e6; border-right: none; padding-top: 0.02in; padding-bottom: 0.02in; padding-left: 0.07in; padding-right: 0in">
+			<p class="cjk" align="center"><font size="2" style="font-size: 10pt">美国</font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="124" style="border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6; border-left: 1px solid #e6e6e6; border-right: none; padding-top: 0.02in; padding-bottom: 0.02in; padding-left: 0.07in; padding-right: 0in">
+			<p class="cjk" align="center"><font color="#000080"><span lang="zxx"><a href="https://baike.baidu.com/item/%E8%AF%BA%E8%B4%9D%E5%B0%94%E7%89%A9%E7%90%86%E5%AD%A6%E5%A5%96" target="_blank"><font color="#136ec2"><span style="text-decoration: none"><font size="2" style="font-size: 10pt">诺贝尔物理学奖</font></span></font></a></span></font></p>
+		</td>
+		<td width="122" style="border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6; border-left: 1px solid #e6e6e6; border-right: none; padding-top: 0.02in; padding-bottom: 0.02in; padding-left: 0.07in; padding-right: 0in">
+			<p class="cjk" align="center"><font color="#000080"><span lang="zxx"><a href="https://baike.baidu.com/item/%E9%9B%B7%E7%BA%B3%C2%B7%E9%9F%A6%E6%96%AF" target="_blank"><font color="#136ec2"><span style="text-decoration: none"><font size="2" style="font-size: 10pt">雷纳</font></span><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><span lang="zxx"><font size="2" style="font-size: 10pt">&middot;</font></span></span></font><span lang="zxx"><font size="2" style="font-size: 10pt">韦斯</font></span></font></a></span></font></p>
+			<p class="cjk" align="center"><font color="#000080"><span lang="zxx"><a href="https://baike.baidu.com/item/%E5%B7%B4%E9%87%8C%C2%B7%E5%B7%B4%E9%87%8C%E4%BB%80" target="_blank"><font color="#136ec2"><span style="text-decoration: none"><font size="2" style="font-size: 10pt">巴里</font></span><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><span lang="zxx"><font size="2" style="font-size: 10pt">&middot;</font></span></span></font><span lang="zxx"><font size="2" style="font-size: 10pt">巴里什</font></span></font></a></span></font></p>
+			<p class="cjk" align="center"><font color="#000080"><span lang="zxx"><a href="https://baike.baidu.com/item/%E5%9F%BA%E6%99%AE%C2%B7S%C2%B7%E7%B4%A2%E6%81%A9" target="_blank"><font color="#136ec2"><span style="text-decoration: none"><font size="2" style="font-size: 10pt">基普</font></span><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><span lang="zxx"><font size="2" style="font-size: 10pt">&middot;S&middot;</font></span></span></font><span lang="zxx"><font size="2" style="font-size: 10pt">索恩</font></span></font></a></span></font></p>
+		</td>
+		<td width="116" style="border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6; border-left: 1px solid #e6e6e6; border-right: none; padding-top: 0.02in; padding-bottom: 0.02in; padding-left: 0.07in; padding-right: 0in">
+			<p class="cjk" align="center"><font size="2" style="font-size: 10pt">美国</font></p>
+		</td>
+		<td width="307" style="border: 1px solid #e6e6e6; padding: 0.02in 0.07in">
+			<p class="cjk" align="center"><font size="2" style="font-size: 10pt">在</font><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><font size="2" style="font-size: 10pt">LIGO</font></span></font><font size="2" style="font-size: 10pt">探测器和引力波观测方面</font></p>
+		</td>
+	</tr>
+	<tr>
+		<td rowspan="3" width="124" style="border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6; border-left: 1px solid #e6e6e6; border-right: none; padding-top: 0.02in; padding-bottom: 0.02in; padding-left: 0.07in; padding-right: 0in">
+			<p class="cjk" align="center"><font color="#000080"><span lang="zxx"><a href="https://baike.baidu.com/item/%E8%AF%BA%E8%B4%9D%E5%B0%94%E5%8C%96%E5%AD%A6%E5%A5%96" target="_blank"><font color="#136ec2"><span style="text-decoration: none"><font size="2" style="font-size: 10pt">诺贝尔化学奖</font></span></font></a></span></font></p>
+		</td>
+		<td width="122" style="border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6; border-left: 1px solid #e6e6e6; border-right: none; padding-top: 0.02in; padding-bottom: 0.02in; padding-left: 0.07in; padding-right: 0in">
+			<p class="cjk" align="center"><font color="#000080"><span lang="zxx"><a href="https://baike.baidu.com/item/%E9%9B%85%E5%85%8B%C2%B7%E6%9D%9C%E6%B3%A2%E5%88%87%E7%89%B9" target="_blank"><font color="#136ec2"><span style="text-decoration: none"><font size="2" style="font-size: 10pt">雅克</font></span><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><span lang="zxx"><font size="2" style="font-size: 10pt">&middot;</font></span></span></font><span lang="zxx"><font size="2" style="font-size: 10pt">杜波切特</font></span></font></a></span></font></p>
+		</td>
+		<td width="116" style="border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6; border-left: 1px solid #e6e6e6; border-right: none; padding-top: 0.02in; padding-bottom: 0.02in; padding-left: 0.07in; padding-right: 0in">
+			<p class="cjk" align="center"><font size="2" style="font-size: 10pt">瑞士</font></p>
+		</td>
+		<td rowspan="3" width="307" style="border: 1px solid #e6e6e6; padding: 0.02in 0.07in">
+			<p class="cjk" align="center"><font size="2" style="font-size: 10pt">发展了冷冻电子显微镜技术</font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="122" style="border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6; border-left: 1px solid #e6e6e6; border-right: none; padding-top: 0.02in; padding-bottom: 0.02in; padding-left: 0.07in; padding-right: 0in">
+			<p class="cjk" align="center"><font color="#000080"><span lang="zxx"><a href="https://baike.baidu.com/item/%E9%98%BF%E5%B8%8C%E5%A7%86%C2%B7%E5%BC%97%E5%85%B0%E5%85%8B" target="_blank"><font color="#136ec2"><span style="text-decoration: none"><font size="2" style="font-size: 10pt">阿希姆</font></span><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><span lang="zxx"><font size="2" style="font-size: 10pt">&middot;</font></span></span></font><span lang="zxx"><font size="2" style="font-size: 10pt">弗兰克</font></span></font></a></span></font></p>
+		</td>
+		<td width="116" style="border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6; border-left: 1px solid #e6e6e6; border-right: none; padding-top: 0.02in; padding-bottom: 0.02in; padding-left: 0.07in; padding-right: 0in">
+			<p class="cjk" align="center"><font size="2" style="font-size: 10pt">德国</font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="122" style="border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6; border-left: 1px solid #e6e6e6; border-right: none; padding-top: 0.02in; padding-bottom: 0.02in; padding-left: 0.07in; padding-right: 0in">
+			<p class="cjk" align="center"><font color="#000080"><span lang="zxx"><a href="https://baike.baidu.com/item/%E7%90%86%E6%9F%A5%E5%BE%B7%C2%B7%E4%BA%A8%E5%BE%B7%E6%A3%AE" target="_blank"><font color="#136ec2"><span style="text-decoration: none"><font size="2" style="font-size: 10pt">理查德</font></span><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><span lang="zxx"><font size="2" style="font-size: 10pt">&middot;</font></span></span></font><span lang="zxx"><font size="2" style="font-size: 10pt">亨德森</font></span></font></a></span></font></p>
+		</td>
+		<td width="116" style="border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6; border-left: 1px solid #e6e6e6; border-right: none; padding-top: 0.02in; padding-bottom: 0.02in; padding-left: 0.07in; padding-right: 0in">
+			<p class="cjk" align="center"><font size="2" style="font-size: 10pt">英国</font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="124" style="border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6; border-left: 1px solid #e6e6e6; border-right: none; padding-top: 0.02in; padding-bottom: 0.02in; padding-left: 0.07in; padding-right: 0in">
+			<p class="cjk" align="center"><font color="#000080"><span lang="zxx"><a href="https://baike.baidu.com/item/%E8%AF%BA%E8%B4%9D%E5%B0%94%E6%96%87%E5%AD%A6%E5%A5%96" target="_blank"><font color="#136ec2"><span style="text-decoration: none"><font size="2" style="font-size: 10pt">诺贝尔文学奖</font></span></font></a></span></font></p>
+		</td>
+		<td width="122" style="border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6; border-left: 1px solid #e6e6e6; border-right: none; padding-top: 0.02in; padding-bottom: 0.02in; padding-left: 0.07in; padding-right: 0in">
+			<p class="cjk" align="center"><font color="#000080"><span lang="zxx"><a href="https://baike.baidu.com/item/%E7%9F%B3%E9%BB%91%E4%B8%80%E9%9B%84" target="_blank"><font color="#136ec2"><span style="text-decoration: none"><font size="2" style="font-size: 10pt">石黑一雄</font></span></font></a></span></font></p>
+		</td>
+		<td width="116" style="border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6; border-left: 1px solid #e6e6e6; border-right: none; padding-top: 0.02in; padding-bottom: 0.02in; padding-left: 0.07in; padding-right: 0in">
+			<p class="cjk" align="center"><font size="2" style="font-size: 10pt">日裔英国籍</font></p>
+		</td>
+		<td width="307" style="border: 1px solid #e6e6e6; padding: 0.02in 0.07in">
+			<p class="cjk" align="center"><font size="2" style="font-size: 10pt">富有激情的力量，他展现了一道深渊。&rdquo;</font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="124" style="border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6; border-left: 1px solid #e6e6e6; border-right: none; padding-top: 0.02in; padding-bottom: 0.02in; padding-left: 0.07in; padding-right: 0in">
+			<p class="cjk" align="center"><font color="#000080"><span lang="zxx"><a href="https://baike.baidu.com/item/%E8%AF%BA%E8%B4%9D%E5%B0%94%E5%92%8C%E5%B9%B3%E5%A5%96" target="_blank"><font color="#136ec2"><span style="text-decoration: none"><font size="2" style="font-size: 10pt">诺贝尔和平奖</font></span></font></a></span></font></p>
+		</td>
+		<td width="122" style="border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6; border-left: 1px solid #e6e6e6; border-right: none; padding-top: 0.02in; padding-bottom: 0.02in; padding-left: 0.07in; padding-right: 0in">
+			<p class="cjk" align="center"><font color="#000080"><span lang="zxx"><a href="https://baike.baidu.com/item/%E5%9B%BD%E9%99%85%E5%BA%9F%E9%99%A4%E6%A0%B8%E6%AD%A6%E5%99%A8%E8%BF%90%E5%8A%A8" target="_blank"><font color="#136ec2"><span style="text-decoration: none"><font size="2" style="font-size: 10pt">国际废除核武器运动</font></span></font></a></span></font><font size="2" style="font-size: 10pt">（</font><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><font size="2" style="font-size: 10pt">ICAN</font></span></font><font size="2" style="font-size: 10pt">）</font></p>
+		</td>
+		<td width="116" style="border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6; border-left: 1px solid #e6e6e6; border-right: none; padding-top: 0.02in; padding-bottom: 0.02in; padding-left: 0.07in; padding-right: 0in">
+			<p class="cjk" align="center"><font size="2" style="font-size: 10pt"><b>（非政府组织）</b></font></p>
+		</td>
+		<td width="307" style="border: 1px solid #e6e6e6; padding: 0.02in 0.07in">
+			<p class="cjk" align="center"><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><font size="2" style="font-size: 10pt">2017</font></span></font><font size="2" style="font-size: 10pt">年</font><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><font size="2" style="font-size: 10pt">122</font></span></font><font size="2" style="font-size: 10pt">国签署禁止核子扩散条约（</font><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><font size="2" style="font-size: 10pt">NPT</font></span></font><font size="2" style="font-size: 10pt">）</font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="124" style="border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6; border-left: 1px solid #e6e6e6; border-right: none; padding-top: 0.02in; padding-bottom: 0.02in; padding-left: 0.07in; padding-right: 0in">
+			<p class="cjk" align="center"><font color="#000080"><span lang="zxx"><a href="https://baike.baidu.com/item/%E8%AF%BA%E8%B4%9D%E5%B0%94%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%A5%96" target="_blank"><font color="#136ec2"><span style="text-decoration: none"><font size="2" style="font-size: 10pt">诺贝尔经济学奖</font></span></font></a></span></font></p>
+		</td>
+		<td width="122" style="border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6; border-left: 1px solid #e6e6e6; border-right: none; padding-top: 0.02in; padding-bottom: 0.02in; padding-left: 0.07in; padding-right: 0in">
+			<p class="cjk" align="center"><font color="#000080"><span lang="zxx"><a href="https://baike.baidu.com/item/%E7%90%86%E6%9F%A5%E5%BE%B7%C2%B7%E5%A1%9E%E5%8B%92" target="_blank"><font color="#136ec2"><span style="text-decoration: none"><font size="2" style="font-size: 10pt">理查德</font></span><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><span lang="zxx"><font size="2" style="font-size: 10pt">&middot;</font></span></span></font><span lang="zxx"><font size="2" style="font-size: 10pt">塞勒</font></span></font></a></span></font></p>
+		</td>
+		<td width="116" style="border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6; border-left: 1px solid #e6e6e6; border-right: none; padding-top: 0.02in; padding-bottom: 0.02in; padding-left: 0.07in; padding-right: 0in">
+			<p class="cjk" align="center"><font size="2" style="font-size: 10pt">美国</font></p>
+		</td>
+		<td width="307" style="border: 1px solid #e6e6e6; padding: 0.02in 0.07in">
+			<p class="cjk" align="center"><font size="2" style="font-size: 10pt">在行为金融学方面，塞勒研究人的</font><font color="#000080"><span lang="zxx"><a href="https://baike.baidu.com/item/%E6%9C%89%E9%99%90%E7%90%86%E6%80%A7/1125108" target="_blank"><font color="#136ec2"><span style="text-decoration: none"><font size="2" style="font-size: 10pt">有限理性</font></span></font></a></span></font><font size="2" style="font-size: 10pt">行为对</font><font color="#000080"><span lang="zxx"><a href="https://baike.baidu.com/item/%E9%87%91%E8%9E%8D%E5%B8%82%E5%9C%BA/329967" target="_blank"><font color="#136ec2"><span style="text-decoration: none"><font size="2" style="font-size: 10pt">金融市场</font></span></font></a></span></font><font size="2" style="font-size: 10pt">的影响，并作出了很多重要贡献。</font></p>
+		</td>
+	</tr>
+</table>
+<p class="cjk" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0in; line-height: 100%"><font size="2" style="font-size: 10pt">好像这些得奖者和电脑都没什么关系。</font></p>
+<p class="cjk" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0in; line-height: 100%"><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><font size="2" style="font-size: 10pt">2016</font></span></font><font size="2" style="font-size: 10pt">国家自然科学奖：</font></p>
+<p class="cjk" style="margin-bottom: 0in; line-height: 100%"><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: normal"><font face="微软雅黑, sans-serif"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><b>国家自然奖一等奖&mdash;&mdash;&ldquo;大亚湾反应堆中微子实验发现的中微子振荡新模式&rdquo;</b></span></font></font></span></font></span><font color="#333333"><font face="微软雅黑, sans-serif"><font size="3" style="font-size: 12pt">
+</font></font></font>
+</p>
+<p class="cjk" style="margin-bottom: 0in; line-height: 100%"><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: 0.5pt"><font face="微软雅黑, sans-serif"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><span style="font-weight: normal">主要完成人：王贻芳</span></span></font></font></span></font></span><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><font color="#333333"><font face="微软雅黑, sans-serif"><font size="3" style="font-size: 12pt"><br/>
+</font></font></font></span></font><span style="font-variant: normal"><font color="#333333"><span style="letter-spacing: 0.5pt"><font face="微软雅黑, sans-serif"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><span style="font-weight: normal">完成单位（完成人所在单位）：中国科学院高能物理研究所</span></span></font></font></span></font></span><font color="#333333"><font face="微软雅黑, sans-serif"><font size="3" style="font-size: 12pt">
+</font></font></font>
+</p>
+<p class="cjk" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0in; line-height: 100%"><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><font color="#333333"><font face="微软雅黑, sans-serif"><font size="3" style="font-size: 12pt">2017</font></font></span></font><font face="微软雅黑, sans-serif"><font size="3" style="font-size: 12pt">年国家自然科学奖：</font></font></font></p>
+<p class="cjk" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<table width="966" cellpadding="6" cellspacing="0">
+	<col width="46">
+	<col width="80">
+	<col width="416">
+	<col width="300">
+	<col width="60">
+	<tr valign="top">
+		<td width="46" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0in; padding-right: 0in">
+			<p class="cjk" align="center"><font face="SimSun"><font size="2" style="font-size: 10pt"><span lang="en-US">1</span></font></font></p>
+		</td>
+		<td width="80" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0in; padding-right: 0in">
+			<p class="cjk" align="center"><font face="SimSun"><font size="2" style="font-size: 10pt"><span lang="en-US">Z-105-1-01</span></font></font></p>
+		</td>
+		<td width="416" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0in; padding-right: 0in">
+			<p class="cjk" style="text-decoration: none"><span style="display: inline-block; border: 1px solid #005aff; padding: 0in"><font size="2" style="font-size: 10pt"><font face="SimSun">水稻高产优质性状形成的分子机理及品种设计</span></font></font></p>
+		</td>
+		<td width="300" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0in; padding-right: 0in">
+			<p class="cjk"><font color="#000000"><font face="SimSun"><font size="2" style="font-size: 10pt">李家洋（中国科学院遗传与发育生物学研究所），</font></font></font><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><font color="#000000"><font face="SimSun"><font size="2" style="font-size: 10pt"><br/>
+</font></font></font></span></font><font color="#000000"><font face="SimSun"><font size="2" style="font-size: 10pt">韩斌（中国科学院上海生命科学研究院），</font></font></font><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><font color="#000000"><font face="SimSun"><font size="2" style="font-size: 10pt"><br/>
+</font></font></font></span></font><font color="#000000"><font face="SimSun"><font size="2" style="font-size: 10pt">钱前（中国水稻研究所），</font></font></font><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><font color="#000000"><font face="SimSun"><font size="2" style="font-size: 10pt"><br/>
+</font></font></font></span></font><font color="#000000"><font face="SimSun"><font size="2" style="font-size: 10pt">王永红（中国科学院遗传与发育生物学研究所），</font></font></font><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><font color="#000000"><font face="SimSun"><font size="2" style="font-size: 10pt"><br/>
+</font></font></font></span></font><font color="#000000"><font face="SimSun"><font size="2" style="font-size: 10pt">黄学辉（中国科学院上海生命科学研究院）</font></font></font></p>
+		</td>
+		<td width="60" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0in; padding-right: 0.04in">
+			<p class="cjk"><font face="SimSun"><font size="2" style="font-size: 10pt">李振声</font></font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="46" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0in; padding-right: 0in">
+			<p class="cjk" align="center"><font face="SimSun"><font size="2" style="font-size: 10pt"><span lang="en-US">2</span></font></font></p>
+		</td>
+		<td width="80" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0in; padding-right: 0in">
+			<p class="cjk" align="center"><font face="SimSun"><font size="2" style="font-size: 10pt"><span lang="en-US">Z-103-1-01</span></font></font></p>
+		</td>
+		<td width="416" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0in; padding-right: 0in">
+			<p class="cjk" style="text-decoration: none"><span style="display: inline-block; border: 1px solid #005aff; padding: 0in"><font size="2" style="font-size: 10pt"><font face="SimSun">聚集诱导发光</span></font></font></p>
+		</td>
+		<td width="300" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0in; padding-right: 0in">
+			<p class="cjk"><font color="#000000"><font face="SimSun"><font size="2" style="font-size: 10pt">唐本忠（香港科技大学），</font></font></font><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><font color="#000000"><font face="SimSun"><font size="2" style="font-size: 10pt"><br/>
+</font></font></font></span></font><font color="#000000"><font face="SimSun"><font size="2" style="font-size: 10pt">秦安军（浙江大学），</font></font></font><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><font color="#000000"><font face="SimSun"><font size="2" style="font-size: 10pt"><br/>
+</font></font></font></span></font><font color="#000000"><font face="SimSun"><font size="2" style="font-size: 10pt">董宇平（北京理工大学），</font></font></font><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><font color="#000000"><font face="SimSun"><font size="2" style="font-size: 10pt"><br/>
+</font></font></font></span></font><font color="#000000"><font face="SimSun"><font size="2" style="font-size: 10pt">李振（香港科技大学），</font></font></font><font face="Liberation Serif, Times New Roman, serif"><span lang="en-US"><font color="#000000"><font face="SimSun"><font size="2" style="font-size: 10pt"><br/>
+</font></font></font></span></font><font color="#000000"><font face="SimSun"><font size="2" style="font-size: 10pt">孙景志（浙江大学）</font></font></font></p>
+		</td>
+		<td width="60" style="border-top: none; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: 1.00pt solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0in; padding-right: 0.04in">
+			<p class="cjk"><font color="#000000"><font face="SimSun"><font size="2" style="font-size: 10pt">谭蔚泓，张</font></font></font><font color="#000000"><font face="SimSun">&nbsp;</font></font><font color="#000000"><font face="SimSun"><font size="2" style="font-size: 10pt">希，曹</font></font></font><font color="#000000"><font face="SimSun">&nbsp;</font></font><font color="#000000"><font face="SimSun"><font size="2" style="font-size: 10pt">镛</font></font></font></p>
+		</td>
+	</tr>
+</table>
+<p class="cjk" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p class="cjk" style="margin-bottom: 0in; line-height: 100%"><font color="#333333"><font face="微软雅黑, sans-serif"><font size="3" style="font-size: 12pt">好像和我们学校，还是没有什么关系。。。。。。</font></font></font></p>
+</body>
+</html>
